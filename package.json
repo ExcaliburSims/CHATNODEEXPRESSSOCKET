@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ExcaliburSims/CHATNODEEXPRESSSOCKET/issues"
   },
-  "homepage": "https://github.com/ExcaliburSims/CHATNODEEXPRESSSOCKET#readme"
+  "homepage": "https://github.com/ExcaliburSims/CHATNODEEXPRESSSOCKET#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
