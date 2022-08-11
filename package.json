@@ -1,0 +1,26 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExcaliburSims/CHATNODEEXPRESSSOCKET.git"
+  },
+  "keywords": [
+    "discussion",
+    "instantanée",
+    "chat",
+    "node",
+    "socket.io"
+  ],
+  "author": "Siméon ZILU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ExcaliburSims/CHATNODEEXPRESSSOCKET/issues"
+  },
+  "homepage": "https://github.com/ExcaliburSims/CHATNODEEXPRESSSOCKET#readme"
+}
