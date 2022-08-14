@@ -260,15 +260,19 @@
 			<div class="messages-content"></div>
 		</div>
 		<div class="message-box">
-			<textarea type="text" class="message-input" placeholder="Type message..."></textarea>
-			<button type="submit" class="message-submit">Send</button>
+			<textarea type="text" class="message-input" id='message' placeholder="Type message..."></textarea>
+			<button type="submit" class="message-submit" onclick='send()'>Send</button>
 		</div>
 
 	</div>
 	<div class="bg"></div>
-</body>
-<script src="/socket.io/socket.io.js"></script>
-<script>
-	let socket = io();
-</script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="./socke.js"></script>
+	<!-- <script>
+	//const socket = io();
+	const text = document.getElements	sage').value; 
+	var send		 = () 	=> {
+	}
+	</script> -->
+	</body>
 </html>
