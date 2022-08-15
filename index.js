@@ -17,17 +17,12 @@ io.on("connection", (socket) => {
 	})
 	socket.on('chat message', (msg) => {
 		console.log('message reçu : ' + msg);
+		io.emit('chat message', msg)
 	})
 });
 
 //SERVEUR
-/* opp.listen(port, () => {
-  console.log(`le serveur tourne au port ${port}`)
-}) 
-io.on('connection', () => {
-    console.log('a user connected');
-});
-*/
+
 const server = http.listen(8080, () => {
     const {port} = server.address();
     console.log(`Listening on port ${port}`);
