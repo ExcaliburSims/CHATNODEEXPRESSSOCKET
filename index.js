@@ -2,14 +2,12 @@ const express = require('express');
 const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
-const path = require('path');
-const port = 8080;
+//const port = 8080;
+
+//middleware to read css, image and js page
 
 app.use(express.static('Public'))
-//app.use(app.static(path.join(__dirname, '/Views')));
 app.get('/message', (req, res) => {
-	//console.log(res.setHeader('content-type', 'text/plain'));
-	//res.setHeader('content-type', 'text/css')
 	res.status(200).sendFile('Views/index.html', {root: __dirname})
 })
 io.on("connection", (socket) => {
@@ -23,6 +21,14 @@ io.on("connection", (socket) => {
 });
 
 //SERVEUR
-http.listen(port, () => {
+/* opp.listen(port, () => {
   console.log(`le serveur tourne au port ${port}`)
-})
+}) 
+io.on('connection', () => {
+    console.log('a user connected');
+});
+*/
+const server = http.listen(8080, () => {
+    const {port} = server.address();
+    console.log(`Listening on port ${port}`);
+});
